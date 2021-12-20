@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{065357DB-CA09-4E9A-8143-B42A05EBB505}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gestion_Des_Notes</RootNamespace>
+    <AssemblyName>Gestion Des Notes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>..\..\..\..\..\..\.nuget\packages\FontAwesome.Sharp\5.15.3\lib\net40\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gestion d%27Admin\Ajouter Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27Admin\Ajouter Admin.designer.cs">
+      <DependentUpon>Ajouter Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion d%27Admin\Afficher Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27Admin\Afficher Admin.designer.cs">
+      <DependentUpon>Afficher Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportRecus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportRecus.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="datasetRecu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datasetRecu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ficheInscription.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ficheInscription.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27Admin\Gestion d%27Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27Admin\Gestion d%27Admin.designer.cs">
+      <DependentUpon>Gestion d%27Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion d%27Admin\Modifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27Admin\Modifier.designer.cs">
+      <DependentUpon>Modifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion d%27etudiants\Afficher_Etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27etudiants\Afficher_Etudiant.Designer.cs">
+      <DependentUpon>Afficher_Etudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion d%27etudiants\Ajouter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27etudiants\Ajouter.Designer.cs">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion d%27etudiants\Gestion d%27etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27etudiants\Gestion d%27etudiant.Designer.cs">
+      <DependentUpon>Gestion d%27etudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion d%27etudiants\Modifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion d%27etudiants\Modifier.Designer.cs">
+      <DependentUpon>Modifier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion De formation\Afficher_Formations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion De formation\Afficher_Formations.Designer.cs">
+      <DependentUpon>Afficher_Formations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion De formation\Ajouter_Formation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion De formation\Ajouter_Formation.Designer.cs">
+      <DependentUpon>Ajouter_Formation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion De formation\Gestion De Formation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion De formation\Gestion De Formation.Designer.cs">
+      <DependentUpon>Gestion De Formation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion De formation\Modifier Formation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion De formation\Modifier Formation.Designer.cs">
+      <DependentUpon>Modifier Formation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion de paiment\Afficher Paiement Etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion de paiment\Afficher Paiement Etudiant.Designer.cs">
+      <DependentUpon>Afficher Paiement Etudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion de paiment\Afficher paiement par Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion de paiment\Afficher paiement par Admin.Designer.cs">
+      <DependentUpon>Afficher paiement par Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion de paiment\Gestion Paiment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion de paiment\Gestion Paiment.Designer.cs">
+      <DependentUpon>Gestion Paiment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion de paiment\Payer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion de paiment\Payer.Designer.cs">
+      <DependentUpon>Payer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inscriptionFicheRport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inscriptionFicheRport.Designer.cs">
+      <DependentUpon>inscriptionFicheRport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recusInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recusInterface.Designer.cs">
+      <DependentUpon>recusInterface.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Gestion d%27Admin\Ajouter Admin.resx">
+      <DependentUpon>Ajouter Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion d%27Admin\Afficher Admin.resx">
+      <DependentUpon>Afficher Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportRecus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportRecus.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ficheInscription.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ficheInscription.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion d%27Admin\Gestion d%27Admin.resx">
+      <DependentUpon>Gestion d%27Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion d%27Admin\Modifier.resx">
+      <DependentUpon>Modifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion d%27etudiants\Afficher_Etudiant.resx">
+      <DependentUpon>Afficher_Etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion d%27etudiants\Ajouter.resx">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion d%27etudiants\Gestion d%27etudiant.resx">
+      <DependentUpon>Gestion d%27etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion d%27etudiants\Modifier.resx">
+      <DependentUpon>Modifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion De formation\Afficher_Formations.resx">
+      <DependentUpon>Afficher_Formations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion De formation\Ajouter_Formation.resx">
+      <DependentUpon>Ajouter_Formation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion De formation\Gestion De Formation.resx">
+      <DependentUpon>Gestion De Formation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion De formation\Modifier Formation.resx">
+      <DependentUpon>Modifier Formation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion de paiment\Afficher Paiement Etudiant.resx">
+      <DependentUpon>Afficher Paiement Etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion de paiment\Afficher paiement par Admin.resx">
+      <DependentUpon>Afficher paiement par Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion de paiment\Gestion Paiment.resx">
+      <DependentUpon>Gestion Paiment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion de paiment\Payer.resx">
+      <DependentUpon>Payer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inscriptionFicheRport.resx">
+      <DependentUpon>inscriptionFicheRport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="recusInterface.resx">
+      <DependentUpon>recusInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="datasetRecu.xsc">
+      <DependentUpon>datasetRecu.xsd</DependentUpon>
+    </None>
+    <None Include="datasetRecu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datasetRecu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="datasetRecu.xss">
+      <DependentUpon>datasetRecu.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="competenceCenter.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

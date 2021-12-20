@@ -1,0 +1,14 @@
+  connection.Open();
+            OleDbCommand commande = new OleDbCommand();
+            OleDbCommand commande2 = new OleDbCommand();
+
+            commande.Connection = connection;
+            commande2.Connection = connection;
+           commande.CommandText = "insert into Etudiant (cin,nom,prenom,sexe,profession,adresse,telfixe,gsm,ville) values ('" + txtCin.Text + "' , '" + txtNom.Text + "' ,  '" + txtPrenom.Text + "' ,'" + sexe + "','" + txtProfession.Text + "' , '" + txtAdresse.Text + "','"+txtTelFixe.Text+"','"+txtGsm.Text+"','"+txtVille.Text+"' ) ";
+           commande2.CommandText = "insert into Inscription (idEtudiant,cin,idFormation,nomformation,typeFormation,prix,vitesse,dateIncription) values(" + (int.Parse(txtIdEtudiant.Text)) + ", '" + txtCin.Text + "','" + cboNomFormation.SelectedValue + "','" + cboNomFormation.Text + "', '" + cboTypeFormation.Text + "'," + (float.Parse(txtPrixFormation.Text)) + ", '"+cboVitesseFormation.Text+"' ,  '" + dtPickerdtInscription.Text + "')";
+            commande.ExecuteNonQuery();
+            commande2.ExecuteNonQuery();
+            
+            connection.Close();
+
+            MessageBox.Show("etudiant ajoute avec  succes");
